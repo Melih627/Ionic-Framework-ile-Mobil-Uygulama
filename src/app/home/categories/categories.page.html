@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+    <img class="imgclass2" src="https://img.freepik.com/free-vector/global-network-connection-world-wide-web-connection-lines_110633-43.jpg?size=626&ext=jpg"/>
+    <ion-title >
+      Kategoriler
+    </ion-title>
+  </ion-row>
+  <ion-toolbar>
+    <ion-button (click)="GoBack()">Geri Dön</ion-button>
+  </ion-toolbar>
+  </ion-toolbar>
+  
+  
+  <ion-grid>
+    <ion-row>
+      <ion-button (click)="GetProductsByCategory('Bilgisayar')">Bilgisayar</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="GetProductsByCategory('Telefon')">Telefon</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="GetProductsByCategory('Saat')">Saat</ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+  
+  <app-category-list [products]="Products"></app-category-list>
+
+</ion-content>

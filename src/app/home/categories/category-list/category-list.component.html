@@ -1,0 +1,18 @@
+
+<ng-container  *ngIf="products">
+  <ion-card  *ngFor="let item of products">
+    <img class="imgclass1" src={{item.ProductImageURL}}/>
+    <ion-card-header>
+      <ion-card-subtitle>{{item.ProductPrize}} TL</ion-card-subtitle>
+      <ion-card-title>{{item.ProductName | uppercase}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{item.ProductExplain}}
+    </ion-card-content>
+    <ion-card-content>
+     Satıcı iletişim numarası {{item.ProductOwnerPhoneNumber}}
+    </ion-card-content> 
+  </ion-card>
+  </ng-container>
+

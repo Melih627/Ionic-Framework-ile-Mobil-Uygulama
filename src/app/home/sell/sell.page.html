@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-row>
+    <img class="imgclass2" src="https://img.freepik.com/free-vector/global-network-connection-world-wide-web-connection-lines_110633-43.jpg?size=626&ext=jpg"/>
+    <ion-title >
+      Ürün Sat
+    </ion-title>
+  </ion-row>
+  <ion-toolbar >
+    <ion-button (click)="GoBack()">Geri Dön</ion-button>
+  </ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+
+    <ion-grid style="background-color: #B3E9FE;">
+      <ion-row >
+        <ion-select [(ngModel)]="newProduct.ProductName"  placeholder="Kategori Seç">
+          <ion-select-option value="Bilgisayar">Bilgisayar</ion-select-option>
+          <ion-select-option value="Telefon">Telefon</ion-select-option>
+          <ion-select-option value="Saat">Saat</ion-select-option>
+        </ion-select>
+  </ion-row>
+  <ion-row>
+    <p>Satış Fiyatı : </p>
+    <ion-input [(ngModel)]="newProduct.ProductPrize"  type="number" placeholder="Fiyat"></ion-input>
+  </ion-row>
+  <ion-row>
+    <p>Ürün Açıklaması : </p>
+    <ion-input [(ngModel)]="newProduct.ProductExplain" placeholder="Açıklama"></ion-input>
+  </ion-row>
+  <ion-row>
+    <p>İletişim Numarası : </p>
+    <ion-input [(ngModel)]="newProduct.ProductOwnerPhoneNumber" type="number" placeholder="İletişim Numarası"></ion-input>
+  </ion-row>
+  <ion-row>
+    <p>Fotoğraf URL : </p>
+    <ion-input [(ngModel)]="newProduct.ProductImageURL" placeholder="Fotoğraf URL "></ion-input>
+  </ion-row>
+  <ion-row>
+    <ion-button (click)="SellNewProduct()">Sat</ion-button>
+  </ion-row>
+  </ion-grid>
+
+
+  
+</ion-content>

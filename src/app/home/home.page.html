@@ -1,0 +1,65 @@
+<ion-header  [translucent]="true">
+ 
+  <ion-toolbar >
+    <ion-row>
+    <img class="imgclass2" src="https://img.freepik.com/free-vector/global-network-connection-world-wide-web-connection-lines_110633-43.jpg?size=626&ext=jpg"/>
+    <ion-title >
+      Traveling Sales Net
+    </ion-title>
+  </ion-row>
+  </ion-toolbar>
+  <ion-toolbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+    <ion-button  expand="block"  (click)="GetAllProducts()">Satılık Ürünleri Listele</ion-button>
+  </ion-col>
+  <ion-col>
+    <ion-button  expand="block" (click)="GoSellPage()" >Ürün Sat</ion-button>
+  </ion-col>
+</ion-row> 
+<ion-row> 
+<ion-col>
+    <ion-button  expand="block"  (click)="GoCategoriesPage()">Satılık Ürünleri Filtrele</ion-button>
+  </ion-col>
+  <ion-col>
+    <p style="color: #050505; font-weight: 750;"> Eklediğiniz ürünü göremiyorsanız sayfayı aşağı çekerek yenileyiniz. </p>
+  </ion-col>
+  
+  </ion-row> 
+</ion-grid>
+</ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ng-container  *ngIf="AllProducts">  
+    
+    
+  <ion-card *ngFor="let item of AllProducts">
+    <img class="imgclass1" src={{item.ProductImageURL}}/>
+    <ion-card-header>
+      <ion-card-subtitle>{{item.ProductPrize}} TL</ion-card-subtitle>
+      <ion-card-title>{{item.ProductName | uppercase}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{item.ProductExplain}}
+    </ion-card-content>
+    <ion-card-content>
+     Satıcı iletişim numarası {{item.ProductOwnerPhoneNumber}}
+    </ion-card-content>
+  
+  </ion-card>
+
+ 
+
+</ng-container>
+
+
+
+
+</ion-content>
