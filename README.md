@@ -33,3 +33,8 @@ Aşağıdaki örnekte saat kategorisine göre filtrelenmiştir.
 Bütün bilgileri eksiksiz olarak girdiğinizde ürünün satılık ilanını vermenize olanak sağlar.
 
 ![ürünsat](<ürünsat.png>)
+
+# Not
+
+Projede InMemoryDbService kullanıldığından sayfa her yenilendiğinde database resetlenir.
+Bu yüzden sekmeler arası geçiş yapmak için butonları kullanınız.
