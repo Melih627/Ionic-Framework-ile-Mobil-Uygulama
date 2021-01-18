@@ -13,13 +13,23 @@ Kurulum tamamlanmıştır ve karşınıza böyle bir pencere açılacaktır.
 
 ## Ana Sayfa
 
+![anasayfa](<anasayfa.png>)
 
 ## Satılık Ürünleri Listele
+
 Tüm ürünlerin kart şeklinde listelenmiş şekilde görürsünüz.
 
+![satiliklistele](<satiliklistele.png>)
+
 ## Satılık Ürünleri Filtrele
+
 Seçtiğiniz kategoriye göre ürünleri kart şeklinde listelenmiş görürsünüz.
 Örnekte saat kategorisine göre filtrelenmiştir.
 
+![satilikfiltrele](<satilikfiltrele.png>)
+
 ## Ürün Sat
+
 Bütün bilgileri eksiksiz olarak girdiğinizde ürünün satılık ilanını vermenize olanak sağlar.
+
+![ürünsat](<ürünsat.png>)
