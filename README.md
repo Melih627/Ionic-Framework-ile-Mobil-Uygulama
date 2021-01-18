@@ -26,7 +26,7 @@ Tüm ürünlerin kart şeklinde listelenmiş şekilde görürsünüz.
 Seçtiğiniz kategoriye göre ürünleri kart şeklinde listelenmiş görürsünüz.
 Örnekte saat kategorisine göre filtrelenmiştir.
 
-![satilikfiltrele](<satilikfiltrele.png>)
+![filtrelesaat](<filtrelesaat.png>)
 
 ## Ürün Sat
 
